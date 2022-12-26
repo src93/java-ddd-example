@@ -1,7 +1,6 @@
 buildscript {
     repositories {
         mavenCentral()
-        jcenter()
     }
 }
 
@@ -39,9 +38,9 @@ subprojects {
         implementation 'io.projectreactor:reactor-bus:2.0.8.RELEASE'
 
         // Test
-        testCompile "org.mockito:mockito-core:2.+"
-        testCompile 'org.junit.jupiter:junit-jupiter-api:5.+'
-        testRuntime 'org.junit.jupiter:junit-jupiter-engine:5.+'
+        testImplementation "org.mockito:mockito-core:2.+"
+        testImplementation 'org.junit.jupiter:junit-jupiter-api:5.+'
+        testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.+'
     }
 
     test {
